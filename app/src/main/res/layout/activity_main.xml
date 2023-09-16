@@ -17,10 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/paisesRecycler"
+        android:id="@+id/filmesRecycler"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="20dp"
@@ -30,4 +28,4 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:listitem="@layout/filme_item_list" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>-
+</androidx.constraintlayout.widget.ConstraintLayout>
