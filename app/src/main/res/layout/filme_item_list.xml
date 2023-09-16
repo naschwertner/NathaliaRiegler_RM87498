@@ -2,35 +2,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_margin="5dp"
     app:cardCornerRadius="8dp"
-    app:cardElevation="4dp">
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:padding="20dp">
 
         <ImageButton
-            android:id="@+id/iconImageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/iconBotao"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:background="?android:attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/ic_positive"
+            android:src="@drawable/like"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
 
         <TextView
             android:id="@+id/nameTextView"
+            android:layout_marginStart="25dp"
+            android:text="Nome Filme"
+            android:textSize="20sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="Nome da Série"
-            android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/iconImageButton"
+            app:layout_constraintStart_toEndOf="@+id/iconBotao"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/deleteButton"
+            app:layout_constraintEnd_toStartOf="@+id/XButton"
             app:layout_constraintBottom_toTopOf="@+id/genreTextView" />
 
         <TextView
@@ -38,19 +38,21 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Gênero"
-            android:textSize="14sp"
+            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="@+id/nameTextView"
             app:layout_constraintEnd_toEndOf="@+id/nameTextView"
             app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
 
         <Button
-            android:id="@+id/deleteButton"
-            android:layout_width="wrap_content"
+            android:id="@+id/XButton"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:text="Excluir"
+            android:text="X"
+            android:backgroundTint="#8B0000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
